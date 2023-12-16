@@ -1,0 +1,44 @@
+.transaction_history{
+    width: 600px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    border: 3px solid purple;
+}
+
+.header_table{
+    background-color: aqua;
+    font-size: 30px;
+    color:aliceblue;
+    height: 50px;
+    text-align: center;
+}
+
+.item_header{
+    text-align-last: center;
+    border: 3px;
+    border-color: aliceblue;
+}
+
+.body_table{
+    font-size: 28px;
+    color:black;
+    height: 50px;
+    text-align: center;
+}
+
+.item_header{
+    padding: 10px;
+}
+.item_body{
+    padding: 10px;
+}
+
+.body_table:nth-child(even){
+    background-color: white;
+
+}
+
+.body_table:nth-child(odd){
+    background-color: lightgray;
+}
+

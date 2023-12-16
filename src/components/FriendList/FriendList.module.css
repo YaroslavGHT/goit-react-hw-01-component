@@ -1,0 +1,25 @@
+.friend_list{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: 85px;
+    width: calc(100% - 75px) ;
+    padding: 35px;
+    border-radius: 2px;
+    border: 3px;
+    border: solid;
+    border-color:blueviolet;
+    background-color: cornsilk;
+    justify-content: start;
+    align-items: center;
+}
