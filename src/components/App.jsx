@@ -2,10 +2,10 @@ import { MarckupProfile } from './Profile/Profile.jsx';
 import { MarckupStatistics } from './Statistics/Statistics.jsx';
 import { MarckupFriendlist } from './FriendList/FriendList.jsx';
 import {MarckupTransaction} from './TransactionHistory/TransactionHistory.jsx'
-import user from './Profile/user.json';
-import statData from './Statistics/data.json';
-import friends from './FriendList/friends.json';
-import transactions from './TransactionHistory/transactions.json';
+import user from '../data/user.json';
+import statData from '../data/data.json';
+import friends from '../data/friends.json';
+import transactions from '../data/transactions.json';
 
 
 export const App = () => {
@@ -29,7 +29,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <MarckupStatistics title="Upload stats" stats={statData} />
+      <MarckupStatistics stats={statData} />
       <MarckupFriendlist friends={friends} />
       <MarckupTransaction items={transactions} />;
     </div>

@@ -8,15 +8,28 @@ const MarckupFriendlist = ({ friends }) => {
             {friends?.map(item => {
                 return (
                     <li className={css.item} key={item.id}>
-                        <RiRadioButtonLine style={{ color: item.isOnline === true ? 'green' : 'red'}} />
-                        <span className={css.status}>{item.isOnline && ''}</span>
-                        <img className={css.avatar} src={item.avatar} alt="User avatar" width="48" />
-                        <p className={css.name}>{item.name}</p>
+                        <FriendListItem
+                            isOnline={item.isOnline}
+                            avatar={item.avatar}
+                            name={item.name}
+                          /> 
                     </li>     
                 );
              })}          
         </ul>
   );
 };
+
+const FriendListItem = ({ isOnline, avatar, name }) => {
+    return (
+            <>
+                <RiRadioButtonLine style={{ color: isOnline === true ? 'green' : 'red'}} />
+                <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+                <p className={css.name}>{name}</p>
+        
+            </>
+        );
+}
+
 
 export { MarckupFriendlist };
