@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './FriendList.module.css';
-import { RiRadioButtonLine } from "react-icons/ri";
+import { FriendListItem } from './FriendListItem.jsx';
 
 const MarckupFriendlist = ({ friends }) => {
     return (
@@ -20,16 +20,6 @@ const MarckupFriendlist = ({ friends }) => {
   );
 };
 
-const FriendListItem = ({ isOnline, avatar, name }) => {
-    return (
-            <>
-                <RiRadioButtonLine style={{ color: isOnline === true ? 'green' : 'red'}} />
-                <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
-                <p className={css.name}>{name}</p>
-        
-            </>
-        );
-}
 
 
 export { MarckupFriendlist };

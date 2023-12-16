@@ -4,7 +4,7 @@ import css from './Statistics.module.css';
 const MarckupStatistics = ({ title = '', stats }) => {
     return (
     <section className={css.statistics}>
-        {title || <h2 className={css.title}>Upload stats</h2>}
+        {title && <h2 className={css.title}>Upload stats</h2>}
 
         <ul className={css.stat_list}>
             {stats?.map(item => {

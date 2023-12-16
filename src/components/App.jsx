@@ -29,7 +29,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <MarckupStatistics stats={statData} />
+      <MarckupStatistics title='Upload stats' stats={statData} />
       <MarckupFriendlist friends={friends} />
       <MarckupTransaction items={transactions} />;
     </div>
